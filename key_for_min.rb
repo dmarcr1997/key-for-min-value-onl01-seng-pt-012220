@@ -5,6 +5,8 @@ def key_for_min_value(name_hash)
   min_key = ""
   min_value = ""
   count = 0
+  if name_hash.length == 0
+    return nil
   name_hash.collect do |key, value|
     if count == 0
       min_key = key
